@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">
+            <i class="fas fa-lightbulb"></i>
+            <span>Logo</span>
+        </a>
+
+        <nav class="navbar">
+            <a href="#Home">home</a>
+            <a href="#services">service</a>
+            <a href="#about us">About us</a>
+            <a href="#blog">blog</a>
+        </nav>
+        <div id="menu-btn" class="fas fa-bars"></div>
+    </header>
+
+
+
+<section id="home" class="home">
+
+  <div class="image">
+    <img src="img11.jpg" alt="sth">
+  </div>
+
+
+  <div class="container">
+    <div class="item-1">
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur praesentium eum nostrum ipsam autem alias modi non rem, nesciunt tempore ratione assumenda iusto labore quasi consectetur delectus. Quisquam, eveniet porro!</p>
+    </div>
+   
+
+
+  </div>
+  
+</section>
+<section id="services">
+  <div class="content">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe voluptatum veniam voluptatem sapiente qui id nobis totam ex cumque delectus natus odio eius expedita architecto autem beatae a, adipisci excepturi?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis nisi non corrupti distinctio nihil sapiente ratione hic aperiam natus qui similique atque sit ipsam temporibus, adipisci, voluptatibus, deserunt cumque ipsa.</p>
+  </div>
+
+</section>
+
+    <script>
+        let menu= document.querySelector('#menu-btn');
+        let navbar= document.querySelector('.navbar');
+
+      menu.onclick = () =>{
+        menu.classList.toggle('fa-times');
+        navbar.classList.toggle('active');
+
+      }
+    window.onscroll = () =>{
+      menu.classList.remove('fa-times');
+      navbar.classList.remove('active');
+    }
+      </script>
+</body>
+</html>
