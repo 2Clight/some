@@ -7,7 +7,31 @@
     text-decoration: none;
     scroll-behavior: smooth;
 }
-html{
+.container{
+    display: inline-block;
+}
+.text{
+    font-size: 5em;
+    letter-spacing:10px;
+    font-family: monospace;
+    border-right: 5px solid;
+    width: 100%;
+    white-space:nowrap;
+    overflow: hidden;
+    animation: 
+    typing 3s steps(13),
+    cursor .4s step-end infinite alternate;
+}
+@keyframes cursor{
+    50%{
+        border-color: transparent
+    }
+
+}
+@keyframes typing{
+    from {width:0}
+}
+/* html{
     font-size: 86.5%;
     overflow-x: hidden;
     scroll-padding-top: 7rem;
@@ -151,4 +175,4 @@ section{
     #menu-btn{
         display: block;
     }
-}
+} */
